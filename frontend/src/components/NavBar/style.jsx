@@ -8,6 +8,8 @@ export default styled.div`
     margin: 30px;
     list-style: none;
     font-size: 2rem;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: lighter;
     /* position: relative; */
   }
   a {

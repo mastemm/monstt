@@ -15,9 +15,9 @@ export default function Card({ avatar, firstname, lastname, rank, category }) {
   );
 }
 Card.propTypes = {
-  avatar: propTypes.string,
-  firstname: propTypes.string,
-  lastname: propTypes.string,
-  rank: propTypes.number,
-  category: propTypes.string,
+  avatar: propTypes.string.isRequired,
+  firstname: propTypes.string.isRequired,
+  lastname: propTypes.string.isRequired,
+  rank: propTypes.number.isRequired,
+  category: propTypes.string.isRequired,
 };

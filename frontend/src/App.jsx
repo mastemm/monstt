@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import Navbar from "@components/NavBar";
 import Club from "@pages/Club";
 import Connexion from "@pages/Connexion";
@@ -6,8 +5,6 @@ import Home from "@pages/Home";
 import News from "@pages/News";
 import Planning from "@pages/Planning";
 import { Route, Routes } from "react-router-dom";
-
-import "./App.css";
 
 function App() {
   return (

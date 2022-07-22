@@ -1,3 +1,12 @@
-export default function Home() {
-  return <h1>Homepage</h1>;
+import React from "react";
+import SHome from "./style";
+
+function Home() {
+  return (
+    <SHome>
+      <h1>Bienvenue au Mons TT !</h1>
+    </SHome>
+  );
 }
+
+export default Home;

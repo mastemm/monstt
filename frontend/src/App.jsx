@@ -1,4 +1,4 @@
-import Navbar2 from "@components/NavBar2";
+import Navbar from "@components/NavBar";
 import Club from "@pages/Club";
 import Connexion from "@pages/Connexion";
 import Home from "@pages/Home";
@@ -9,7 +9,7 @@ import { Route, Routes } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <Navbar2 />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/news" element={<News />} />

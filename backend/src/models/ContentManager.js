@@ -16,6 +16,12 @@ class ContentManager extends AbstractManager {
       [content.title, content.id]
     );
   }
+
+  findArticle() {
+    return this.connection.query(
+      `select * from  ${ContentManager.table} order by id desc`
+    );
+  }
 }
 
 module.exports = ContentManager;

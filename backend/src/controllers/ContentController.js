@@ -3,7 +3,7 @@ const models = require("../models");
 class ContentController {
   static browse = (req, res) => {
     models.content
-      .findAll()
+      .findArticle()
       .then(([rows]) => {
         res.send(rows);
       })

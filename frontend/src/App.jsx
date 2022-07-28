@@ -5,10 +5,14 @@ import Home from "@pages/Home";
 import News from "@pages/News";
 import Planning from "@pages/Planning";
 import { Route, Routes } from "react-router-dom";
+// import { Admin } from "react-admin";
+// import jsonServerProvider from "ra-data-json-server";
 
+// const dataProvider = jsonServerProvider(`${import.meta.env.VITE_BACKEND_URL}`);
 function App() {
   return (
     <div className="App">
+      {/* <Admin dataProvider={dataProvider} /> */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

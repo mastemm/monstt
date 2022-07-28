@@ -5,15 +5,22 @@ class MemberManager extends AbstractManager {
 
   insert(member) {
     return this.connection.query(
-      `insert into ${MemberManager.table} (title) values (?)`,
-      [member.title]
+      `insert into ${MemberManager.table} (lastname,firstname,rank,category,points,avatar) values (?,?,?,?,?,?)`,
+      [
+        member.lastname,
+        member.firstname,
+        member.rank,
+        member.category,
+        member.points,
+        member.avatar,
+      ]
     );
   }
 
   update(member) {
     return this.connection.query(
-      `update ${MemberManager.table} set title = ? where id = ?`,
-      [member.title, member.id]
+      `update ${MemberManager.table} set ? where id = ?`,
+      [member, member.id]
     );
   }
 }

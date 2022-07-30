@@ -8,6 +8,7 @@ import {
   Edit,
   SimpleForm,
   NumberInput,
+  Create,
 } from "react-admin";
 
 export function MemberList() {
@@ -39,5 +40,20 @@ export function MemberEdit() {
         <TextInput source="avatar" />
       </SimpleForm>
     </Edit>
+  );
+}
+export function MemberCreate() {
+  return (
+    <Create>
+      <SimpleForm>
+        <NumberInput source="id" />
+        <TextInput source="lastname" />
+        <TextInput source="firstname" />
+        <NumberInput source="rank" />
+        <TextInput source="category" />
+        <NumberInput source="points" />
+        <TextInput source="avatar" />
+      </SimpleForm>
+    </Create>
   );
 }
